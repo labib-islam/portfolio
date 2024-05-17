@@ -1,0 +1,131 @@
+.homepage-box {
+  position: relative;
+  margin: 0rem 10vw 0vw 10vw;
+  height: 100vh;
+  display: flex;
+}
+
+.homepage-text-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  height: 100%;
+  z-index: 1;
+}
+
+.homepage-image-box {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.homepage-image-box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.homepage-text-content h4 {
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
+.homepage-text-content h1 {
+  margin-top: -1rem;
+  font-size: 5rem;
+  font-weight: 200;
+  color: rgb(228, 228, 228);
+}
+
+.homepage-text-content h1 span {
+  color: var(--primary-cyan);
+  font-weight: 500;
+  display: inline-block;
+  text-shadow: var(--box-shadow);
+}
+.homepage-text-content h1 span:hover {
+  color: var(--primary-red);
+  transform: scale(1.005);
+  cursor: default;
+  text-shadow: var(--box-shadow);
+}
+
+.homepage-text-content h3 {
+  font-weight: 300;
+  font-size: 2rem;
+  color: rgb(138, 138, 138);
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.homepage-text-content h3:hover {
+  color: var(--primary-red);
+  transform: scale(1.005);
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .homepage-box {
+    margin-top: 4rem;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .homepage-text-box {
+    position: relative;
+  }
+
+  .homepage-image-box {
+    position: relative;
+    right: auto;
+    width: 75%;
+  }
+
+  .homepage-text-content h4 {
+  font-size: 1rem;
+    
+  }
+
+  .homepage-text-content h1 {
+    font-size: 3.5rem;
+  }
+
+
+  .homepage-text-content h3 {
+    font-size: 1.2rem;
+
+  }
+
+}
+
+@media (max-width: 450px) {
+  .homepage-box {
+    margin-top: 0rem;
+  }
+
+  .homepage-text-box {
+    height: 50%;
+  }
+
+  .homepage-text-content h1 {
+    margin-top: .01rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .homepage-text-content h1 {
+    font-size: 2.5rem;
+  }
+}

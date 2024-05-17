@@ -1,0 +1,13 @@
+.navbar-box {
+  /* background-color: green; */
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  color: var(--primary-cyan);
+  /* overflow: hidden; */
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
