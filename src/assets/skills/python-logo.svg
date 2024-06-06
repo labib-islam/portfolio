@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="unique-linear-gradient-1" x1="645.5" y1="-246.7" x2="754.5" y2="-340.5" gradientTransform="translate(-331.4 -103.1) scale(.6 -.6)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5a9fd4"/>
+      <stop offset="1" stop-color="#306998"/>
+    </linearGradient>
+    <linearGradient id="unique-linear-gradient-2" x1="796.7" y1="-397.3" x2="757.8" y2="-342.2" gradientTransform="translate(-331.4 -103.1) scale(.6 -.6)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd43b"/>
+      <stop offset="1" stop-color="#ffe873"/>
+    </linearGradient>
+  </defs>
+  <g id="unique-svg2" sodipodi:docbase="/home/sdeibel">
+    <sodipodi:namedview id="unique-base" bordercolor="#666666" borderopacity="1.0" inkscape:current-layer="unique-svg2" inkscape:cx="243.02499" inkscape:cy="71.887497" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="543" inkscape:window-width="791" inkscape:window-x="0" inkscape:window-y="0" inkscape:zoom="1.4340089" pagecolor="#ffffff"/>
+    <rect y="0" width="180" height="180" fill="#fff" stroke-width="0"/>
+    <g id="unique-g2303">
+      <path id="unique-path1948" d="M89.3,33.8c-4.6,0-9,.4-12.8,1.1-11.3,2-13.4,6.2-13.4,13.9v10.2h26.8v3.4h-36.9c-7.8,0-14.6,4.7-16.8,13.6-2.5,10.2-2.6,16.6,0,27.2,1.9,7.9,6.5,13.6,14.3,13.6h9.2v-12.2c0-8.8,7.7-16.7,16.7-16.7h26.8c7.5,0,13.4-6.1,13.4-13.6v-25.5c0-7.3-6.1-12.7-13.4-13.9-4.6-.8-9.4-1.1-14-1.1ZM74.8,42c2.8,0,5,2.3,5,5.1s-2.3,5.1-5,5.1-5-2.3-5-5.1,2.3-5.1,5-5.1Z" fill="url(#unique-linear-gradient-1)" stroke-width="0"/>
+      <path id="unique-path1950" d="M120.1,62.5v11.9c0,9.2-7.8,17-16.8,17h-26.8c-7.3,0-13.4,6.3-13.4,13.6v25.5c0,7.3,6.3,11.5,13.4,13.6,8.5,2.5,16.6,2.9,26.8,0,6.8-2,13.4-5.9,13.4-13.6v-10.2h-26.8v-3.4h40.2c7.8,0,10.7-5.4,13.4-13.6,2.8-8.4,2.7-16.5,0-27.2-1.9-7.8-5.6-13.6-13.4-13.6h-10.1ZM105,127.1c2.8,0,5,2.3,5,5.1s-2.3,5.1-5,5.1-5-2.3-5-5.1,2.3-5.1,5-5.1Z" fill="url(#unique-linear-gradient-2)" stroke-width="0"/>
+    </g>
+  </g>
+</svg>

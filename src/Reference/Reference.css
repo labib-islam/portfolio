@@ -1,0 +1,98 @@
+
+.page-container.reference {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.referencepage-box > h1 {
+  font-family: "Montserrat";
+  font-size: var(--fs-page-title);
+  font-weight: 400;
+}
+
+
+
+.reference-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reference-content-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reference-content-v-line {
+  background-color: rgb(34, 113, 182);
+  width: 2px;
+  height: 5rem;
+}
+
+.reference-content {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.reference-content h1 {
+  font-size: var(--fs-content-title);
+  font-weight: 500;
+}
+
+.reference-institute h2 {
+  font-size: var(--fs-500);
+  font-weight: 500;
+}
+
+.reference-content h3 {
+  font-size: var(--fs-500);
+  font-weight: 200;
+  font-style: italic;
+}
+
+.reference-content h5 {
+  font-size: var(--fs-500);
+  font-weight: 300;
+}
+
+.reference-institute h4 {
+  font-size: var(--fs-500);
+  font-weight: 200;
+}
+
+.reference-institute {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+
+@media (min-width: 425px) {
+  .referencepage-box {
+    margin-right: 20vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .referencepage-box {
+    margin-right: 25vw;
+  }
+
+  .reference-content-box {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .reference-content-box {
+    gap: 2rem;
+  }
+  .reference-content-v-line {
+    height: 7rem;
+    width: 3px;
+  }
+}

@@ -1,0 +1,138 @@
+.projectpage-box>h1 {
+  font-family: "Montserrat";
+  font-size: var(--fs-page-title);
+  font-weight: 400;
+}
+
+
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-box {
+  /* height: 15rem; */
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid rgb(88, 88, 88);
+  overflow: hidden;
+}
+
+.project-image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.project-image-box {
+  /* background-color: rgba(238, 245, 252, 0.062); */
+  margin: 1rem;
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  border-radius: 5px;
+  overflow: hidden;
+  /* box-shadow: -1px 1px 5px rgba(255 , 255, 255, .5); */
+
+}
+
+.project-text-container {
+  width: 50%;
+  padding: 1rem;
+
+  /* background-color: rgba(127, 255, 212, 0.048); */
+}
+
+.link-box {
+  display: flex;
+  align-items: center;
+}
+
+.link-box a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.link-icon-box {
+  margin-right: .4rem;
+  width: .7rem;
+  height: .7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-icon path {
+  fill: var(--primary-cyan);
+}
+
+.link-box a:hover .link-icon path {
+  fill: white;
+}
+
+.link-box a:hover h2 {
+  color: var(--primary-cyan);
+}
+
+
+.project-title-box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.project-title-box h1 {
+  font-family: "Montserrat";
+  font-size: var(--fs-content-title);
+  font-weight: 500;
+}
+
+.project-title-box h2 {
+  font-family: "Montserrat";
+  font-size: var(--fs-500);
+  font-weight: 500;
+}
+
+.project-text-box {
+  position: relative;
+  display: flex;
+}
+
+.project-text-box .h-line {
+  width: 2rem;
+  height: 1px;
+  position: absolute;
+}
+
+.project-text-box p {
+  font-size: var(--fs-paragraph);
+  font-weight: 200;
+  line-height: var(--fs-p-line-height);
+  text-indent: 4rem;
+}
+
+@media (max-width: 768px) {
+
+  .project-box {
+    flex-direction: column;
+  }
+
+  .project-image-container {
+    width: 100%;
+  }
+
+  .project-text-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .project-text-box .h-line {
+    height: 2px;
+  }
+
+}

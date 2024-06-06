@@ -27,11 +27,14 @@
   flex: 1;
 }
 
-.homepage-image-box img {
+/* .homepage-image-box img {
   width: 100%;
   object-fit: cover;
-}
+} */
 
+.homepage-image {
+  width: 100%;
+}
 
 
 .homepage-text-content h4 {
@@ -39,11 +42,12 @@
   font-size: 1.3rem;
 }
 
-.homepage-text-content h1 {
-  margin-top: -1rem;
+.homepage-text-content > h1 {
+  margin: .5rem 0rem 2rem 0rem;
   font-size: 5rem;
   font-weight: 200;
   color: rgb(228, 228, 228);
+  line-height: 6rem;
 }
 
 .homepage-text-content h1 span {
@@ -54,7 +58,7 @@
 }
 .homepage-text-content h1 span:hover {
   color: var(--primary-red);
-  transform: scale(1.005);
+  /* transform: scale(1.005); */
   cursor: default;
   text-shadow: var(--box-shadow);
 }
@@ -64,18 +68,134 @@
   font-size: 2rem;
   color: rgb(138, 138, 138);
   display: inline-block;
-  margin-top: 1rem;
+  
 }
 
 .homepage-text-content h3:hover {
   color: var(--primary-red);
-  transform: scale(1.005);
+  /* transform: scale(1.005); */
   cursor: default;
 }
 
+.social-links {
+  /* width: 4rem; */
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.social-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.219);
+  cursor: pointer;
+}
+
+.download-cv-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: 0rem .5rem;
+  height: 1.8rem;
+  border-radius: 5px;
+  /* overflow: hidden; */
+  border: 1px solid rgba(6, 173, 179, 0.2);
+  cursor: pointer;
+}
+
+.download-cv-container .download-text {
+  font-family: "montserrat";
+  font-size: .6rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.39);
+}
+
+.download-cv-container .social-logo-container {
+  border: 1px solid rgba(0, 0, 0, 0);
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+
+
+.download-cv-container:hover {
+  background-color: var(--primary-cyan);
+}
+
+.download-cv-container:hover .download-text {
+  color: white;
+}
+
+.social-links > .social-logo-container:hover {
+  border: 1px solid rgba(255, 255, 255, 0);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.social-logo-container .facebook-logo {
+  fill: rgba(255, 255, 255, 0.39);
+}
+.social-logo-container .facebook-logo-box {
+  fill: rgba(0, 0, 0, 0.089);
+}
+.social-logo-container:hover .facebook-logo {
+  fill: rgb(255, 255, 255, .9);
+}
+.social-logo-container:hover .facebook-logo-box {
+  fill: rgb(24, 118, 242, .9);
+}
+
+.social-logo-container .linkedin-logo {
+  fill: rgba(255, 255, 255, 0.39);
+}
+.social-logo-container .linkedin-logo-box {
+  fill: rgba(0, 0, 0, 0.089);
+}
+.social-logo-container:hover .linkedin-logo {
+  fill: rgb(255, 255, 255, .9);
+}
+.social-logo-container:hover .linkedin-logo-box {
+  fill: rgba(0, 119, 181, .9)
+}
+
+.social-logo-container .github-logo {
+  fill: rgba(255, 255, 255, 0.39);
+}
+.social-logo-container .github-logo-box {
+  fill: rgba(0, 0, 0, 0.089);
+}
+.social-logo-container:hover .github-logo {
+  fill: rgb(23, 21, 21, .9);
+}
+.social-logo-container:hover .github-logo-box {
+  fill: rgb(255, 255, 255, .9);
+}
+
+.social-logo-container .download-icon{
+  fill: rgba(255, 255, 255, 0.39);
+  height: 100%;
+}
+
+.download-cv-container:hover .download-icon{
+  fill: rgb(255, 255, 255);
+  height: 100%;
+}
+
+.logo-icon {
+  width: 100%;
+}
+
+
+
 @media (max-width: 768px) {
   .homepage-box {
-    margin-top: 4rem;
+    margin-top: 8rem;
     position: relative;
     flex-direction: column;
     align-items: center;
@@ -99,6 +219,7 @@
 
   .homepage-text-content h1 {
     font-size: 3.5rem;
+    line-height: 4rem;
   }
 
 
@@ -127,5 +248,6 @@
 @media (max-width: 375px) {
   .homepage-text-content h1 {
     font-size: 2.5rem;
+    line-height: 3rem;
   }
 }

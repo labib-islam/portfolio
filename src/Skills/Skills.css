@@ -1,0 +1,138 @@
+.skillpage-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem
+}
+
+.skilltype-container > h1 {
+  font-family: "Montserrat";
+  font-size: var(--fs-page-title);
+  font-weight: 400;
+}
+
+.skilltype-container > .h-line {
+  width: 4rem;
+  height: 1px;
+  background-color: var(--primary-cyan);
+  margin-top: .2rem;
+  margin-bottom: 1.5rem;
+}
+
+.h-line.no-title {
+  margin-top: -1.5rem;
+  margin-left: .5rem;
+  background-color: rgb(187, 187, 187);
+}
+
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  gap: .7rem;
+}
+
+.skill-box {
+  background-color: rgba(255, 255, 255, 0.705);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+.skill-box:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.skill-icon-box {
+  /* background-color: gray; */
+  border-radius: 10px;
+  width: 4.3rem;
+  height: 4.3rem;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+}
+
+.skill-icon {
+  width: 100%;
+}
+
+.skill-box h3 {
+  font-family: 'Montserrat';
+  position: relative;
+  right: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.678);
+  
+}
+
+@media (min-width: 375px) {
+  .skill-box h3 {
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .skill-box {
+    width: 14rem;
+  }
+  .skill-icon-box {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+}
+
+@media (min-width: 547px) {
+
+}
+
+@media (min-width: 768px) {
+  .skilltype-container > .h-line {
+    width: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skilltype-container > .h-line {
+    width: 6rem;
+    height: 2px;
+  }
+  .skill-container {
+    gap: 1.4rem;
+  }
+  .skill-icon-box {
+    width: 4rem;
+    height: 4rem;
+  }
+  .skill-box {
+    width: 14rem;
+  }
+
+  .skill-box h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .skill-icon-box {
+    width: 4rem;
+    height: 4rem;
+  }
+  .skill-box {
+    width: 16rem;
+  }
+
+  .skill-box h3 {
+    font-size: 1.2rem;
+  }
+  .skilltype-container > .h-line {
+    width: 7rem;
+    height: 2px;
+  }
+}

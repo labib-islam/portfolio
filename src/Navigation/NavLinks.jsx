@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import DownArrow from "../assets/down-arrow.svg?react";
+import DownArrow from "../assets/icons/down-arrow.svg?react";
 
 import "./NavLinks.css";
 
@@ -9,16 +9,30 @@ const NavLinks = (props) => {
 
   const dropdownRef = useRef();
 
-  const dropdownStatusHandler = () => {
+  const dropdownStatusHandler = (event) => {
+    event.stopPropagation();
     dropdownStatus === "active"
       ? setDropdownStatus("inactive")
       : setDropdownStatus("active");
   };
 
+  useEffect(() => {
+    const closeDropdownHandler = (event) => {
+      if (!dropdownRef.current.contains(event.target)) {
+        setDropdownStatus("inactive");
+      }
+    };
+    document.addEventListener("click", closeDropdownHandler);
+
+    return () => {
+      document.removeEventListener("click", closeDropdownHandler);
+    };
+  }, [dropdownStatus]);
+
   return (
     <ul className={props.className}>
       {Object.entries(props.paths).map(([name, path]) => (
-        <li key={name}>
+        <li key={name} className={name}>
           {name === "Home" ? (
             <NavLink to={path} end>
               {name}
@@ -28,17 +42,18 @@ const NavLinks = (props) => {
           )}
         </li>
       ))}
-      <div className="dropdown">
+      <div className="dropdown" >
+        
         <div
-          className={`down-arrow-icon-box`}
+          className={`down-arrow-icon-box ${dropdownStatus}`}
           tabIndex="0"
-          onClick={dropdownStatusHandler}
+          onClick={dropdownStatusHandler}ref={dropdownRef}
         >
           <DownArrow className="down-arrow-icon" />
         </div>
         <div className={`dropdown-menu  ${dropdownStatus}`}>
-          {Object.entries(props.paths).map(([name, path]) => (
-            <li key={name}>
+          {Object.entries(props.dropdownPaths).map(([name, path]) => (
+            <li key={name} className={name}>
               {name === "Home" ? (
                 <NavLink to={path} end>
                   {name}

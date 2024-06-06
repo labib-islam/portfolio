@@ -6,16 +6,25 @@ import "./MainNavigation.css";
 
 const MainNavigation = () => {
   const navBarPaths = {
-    Home: "/portfolio/",
-    About: "/portfolio/about",
-    Work: "/portfolio/work-experience",
-    Projects: "/portfolio/projects",
-    // Education: "/portfolio/education",
+    Home: "/",
+    About: "/about",
+    Work: "/work-experience",
+    Projects: "/projects",
+  };
+
+  const dropdownPaths = {
+    Home: "/",
+    About: "/about",
+    Work: "/work-experience",
+    Projects: "/projects",
+    Skills: "/skills",
+    Education: "/education",
+    Contact: '/contact',
   };
 
   return (
     <main className="navbar-box">
-      <NavLinks paths={navBarPaths} className="navbar-items-list" />
+      <NavLinks paths={navBarPaths} dropdownPaths={dropdownPaths} className="navbar-items-list" />
     </main>
   );
 };

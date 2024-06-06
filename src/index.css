@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --primary-cyan: rgb(6, 173, 179);
-  --primary-red:  rgb(255, 14, 86);
+  --primary-red: rgb(255, 14, 86);
   --box-shadow: 3px 3px 5px rgba(32, 32, 32, 0.5);
+  --bg-color: rgb(32, 32, 32);
 }
 
 
@@ -11,14 +13,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Montserrat", sans-serif;
   color: white;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 body {
-  background-color: rgb(32, 32, 32);
-
+  background-color: var(--bg-color)
 }
 
 ul {
@@ -27,5 +28,102 @@ ul {
 
 
 .main {
-  margin-top: 4rem;
+  margin-top: 5rem;
+}
+
+.page-container {
+  /* background-color: rgba(0, 0, 0, 0.219); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 8vw 5rem 8vw;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px inset rgba(0, 0, 0, 0.5);
+}
+
+.page-headline {
+  font-family: "Montserrat";
+  font-size: var(--fs-page-title);
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.page-headline::before{
+  content: "";
+  position: absolute;
+  width: 40%;
+  bottom: -.3rem;
+  border-bottom: 1px solid var(--primary-cyan);
+}
+
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+:root {
+  --fs-page-title: 1.3rem;
+  --fs-content-title: 1rem;
+  --fs-paragraph: .8rem;
+  --fs-p-line-height: 1.4rem;
+  --fs-500: .7rem;
+  --fs-400: .6rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs-page-title: 1.5rem;
+    --fs-content-title: 1.2rem;
+    --fs-paragraph: .9rem;
+    --fs-500: .8rem;
+    --fs-p-line-height: 1.57rem;
+  }
+  .page-container {
+    padding: 3rem;
+    margin: 10rem 15vw 0vw 15vw;
+  }
+
+}
+
+@media (min-width: 900px) {
+  .page-container {
+    margin: 10rem 15vw 0vw 15vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --fs-page-title: 1.7rem;
+    --fs-content-title: 1.4rem;
+    --fs-paragraph: 1rem;
+    --fs-500: .9rem;
+    --fs-p-line-height: 1.75rem;
+  }
+
+  .page-container {
+    margin: 10rem 18vw 0vw 18vw;
+  }
+
+  .page-headline::before {
+    border-bottom: 2px solid var(--primary-cyan);
+  }
+}
+
+@media (min-width: 1500px) {
+  :root {
+    --fs-page-title: 2rem;
+    --fs-content-title: 1.6rem;
+    --fs-paragraph: 1.3rem;
+    --fs-500: 1.2rem;
+    --fs-p-line-height: 2.27rem;
+  }
+
+  .page-container {
+    margin: 10rem 20vw 0vw 20vw;
+  }
 }
