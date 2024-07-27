@@ -6,21 +6,21 @@ import FacebookLogo from "../assets/socials/facebook-logo.svg?react";
 import LinkedinLogo from "../assets/socials/linkedin-logo.svg?react";
 import GithubLogo from "../assets/socials/github-logo.svg?react";
 import DownloadIcon from "../assets/icons/download-icon-1.svg?react";
-import PDFflie from "../assets/cv_labibislam.pdf";
+import NewTabIcon from "../assets/icons/new-tab-icon.svg?react";
+import PDFflie from "../assets/resume_labibislam.pdf";
 
 import "./Home.css";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-
   const downloadFileAtURL = (url) => {
     const linkTag = document.createElement("a");
     linkTag.href = url;
-    linkTag.setAttribute("download", "cv_labibislam.pdf");
-    document.body.appendChild(linkTag)
-    linkTag.click()
-    linkTag.remove()
-  }
+    linkTag.setAttribute("download", "resume_labibislam.pdf");
+    document.body.appendChild(linkTag);
+    linkTag.click();
+    linkTag.remove();
+  };
 
   const socialList = [
     {
@@ -57,12 +57,22 @@ const Home = () => {
                 </div>
               </Link>
             ))}
-            <div className="download-cv-container" onClick={() => {downloadFileAtURL(PDFflie)}}>
+            {/* <div className="download-cv-container" onClick={() => {downloadFileAtURL(PDFflie)}}>
               <div className="social-logo-container">
                 <DownloadIcon className="logo-icon" />
               </div>
-              <h1 className="download-text">DOWNLOAD CV</h1>
-            </div>
+              <h1 className="download-text">Download Résumé</h1>
+            </div> */}
+            <Link
+              className="download-cv-container"
+              to="https://docs.google.com/document/d/1wdEWkZIUvyruXho6dDbPsMfJ1g5GB8uAYEOxYbYymLg/edit?usp=sharing"
+              target="_blank"
+            >
+              <div className="social-logo-container">
+                <NewTabIcon className="logo-icon" />
+              </div>
+              <h1 className="download-text">Résumé</h1>
+            </Link>
           </div>
         </div>
       </div>

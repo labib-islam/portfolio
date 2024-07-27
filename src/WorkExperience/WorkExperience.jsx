@@ -7,9 +7,20 @@ import { Link } from "react-router-dom";
 const WorkExperience = () => {
   const workPlaceList = [
   {
+    title: "Adjunct Lecturer",
+    companyName: "Brac University",
+    duration: "May 2024 - Present",
+    description: `Developed and delivered lectures on database system courses.
+Collaborated with other faculty members and provided guidance to students as they constructed their first university project.
+Prepared exam questions and assessments to measure the students' understanding of the material covered in courses.
+`,
+    link: "https://www.bracu.ac.bd/",
+    accentColor: '#324eff'
+  },
+  {
     title: "Student Tutor",
     companyName: "Brac University",
-    duration: "2022-2023",
+    duration: "September 2022 - December 2023",
     description: `Provided constant guidance to freshers, involving assistance in
 course content during lab classes as well as facilitating individual consultation
 to clarify concepts. Continuously worked with faculty members to construct an

@@ -42,7 +42,7 @@
   font-size: 1.3rem;
 }
 
-.homepage-text-content > h1 {
+.homepage-text-content>h1 {
   margin: .5rem 0rem 2rem 0rem;
   font-size: 5rem;
   font-weight: 200;
@@ -56,6 +56,7 @@
   display: inline-block;
   text-shadow: var(--box-shadow);
 }
+
 .homepage-text-content h1 span:hover {
   color: var(--primary-red);
   /* transform: scale(1.005); */
@@ -68,7 +69,7 @@
   font-size: 2rem;
   color: rgb(138, 138, 138);
   display: inline-block;
-  
+
 }
 
 .homepage-text-content h3:hover {
@@ -85,6 +86,7 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
+
 .social-logo-container {
   display: flex;
   justify-content: center;
@@ -98,6 +100,7 @@
 }
 
 .download-cv-container {
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,7 +115,7 @@
 
 .download-cv-container .download-text {
   font-family: "montserrat";
-  font-size: .6rem;
+  font-size: .7rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.39);
 }
@@ -133,7 +136,7 @@
   color: white;
 }
 
-.social-links > .social-logo-container:hover {
+.social-links>.social-logo-container:hover {
   border: 1px solid rgba(255, 255, 255, 0);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
@@ -141,12 +144,15 @@
 .social-logo-container .facebook-logo {
   fill: rgba(255, 255, 255, 0.39);
 }
+
 .social-logo-container .facebook-logo-box {
   fill: rgba(0, 0, 0, 0.089);
 }
+
 .social-logo-container:hover .facebook-logo {
   fill: rgb(255, 255, 255, .9);
 }
+
 .social-logo-container:hover .facebook-logo-box {
   fill: rgb(24, 118, 242, .9);
 }
@@ -154,12 +160,15 @@
 .social-logo-container .linkedin-logo {
   fill: rgba(255, 255, 255, 0.39);
 }
+
 .social-logo-container .linkedin-logo-box {
   fill: rgba(0, 0, 0, 0.089);
 }
+
 .social-logo-container:hover .linkedin-logo {
   fill: rgb(255, 255, 255, .9);
 }
+
 .social-logo-container:hover .linkedin-logo-box {
   fill: rgba(0, 119, 181, .9)
 }
@@ -167,22 +176,25 @@
 .social-logo-container .github-logo {
   fill: rgba(255, 255, 255, 0.39);
 }
+
 .social-logo-container .github-logo-box {
   fill: rgba(0, 0, 0, 0.089);
 }
+
 .social-logo-container:hover .github-logo {
   fill: rgb(23, 21, 21, .9);
 }
+
 .social-logo-container:hover .github-logo-box {
   fill: rgb(255, 255, 255, .9);
 }
 
-.social-logo-container .download-icon{
+.social-logo-container .download-icon {
   fill: rgba(255, 255, 255, 0.39);
   height: 100%;
 }
 
-.download-cv-container:hover .download-icon{
+.download-cv-container:hover .download-icon {
   fill: rgb(255, 255, 255);
   height: 100%;
 }
@@ -213,8 +225,8 @@
   }
 
   .homepage-text-content h4 {
-  font-size: 1rem;
-    
+    font-size: 1rem;
+
   }
 
   .homepage-text-content h1 {
