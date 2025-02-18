@@ -15,4 +15,10 @@ Update ***vite.config.js***
     export default defineConfig({
       plugins: [svgr(), react()],
     });
+How to import?
 
+    import GithubLogo from "../../assets/socials/github-logo.svg?react";
+    
+    <div>
+        <GithubLogo />
+    </div>
