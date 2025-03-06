@@ -64,7 +64,7 @@
   font-style: italic;
   backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(100px);
-  border: 1px solid gray;
+  border: 1px solid var(--left-nav-border-color);
   border-radius: 5px;
   height: 30px;
   display: flex;
@@ -121,7 +121,7 @@
   width: 30px;
   height: 30px;
   padding: 5px;
-  border: 1px solid gray;
+  border: 1px solid var(--left-nav-border-color);
   border-radius: 5px;
   cursor: pointer;
   backdrop-filter: blur(100px);

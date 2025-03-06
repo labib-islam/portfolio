@@ -24,6 +24,7 @@ html {
   --github-icon-foreground-color: rgb(255, 255, 255, .9);
   --github-icon-background-color: rgb(23, 21, 21, .9);
   --sidebar-nav-hover-color: rgba(255, 255, 255, 0.3);
+  --left-nav-border-color: rgb(128, 128, 128);
   
   --resume-font-weight: 600; 
   --job-title-font-weight: 400;
@@ -35,7 +36,7 @@ html {
   --text-color-2: rgb(138, 138, 138);
   --primary-page-background:  rgb(32, 32, 32);
   --secondary-page-background:  rgb(26, 26, 26);
-  --shadow-color: rgb(53, 53, 53);
+  --shadow-color: rgb(0, 0, 0);
   --error-red: rgb(202, 54, 73);
 
   --social-icon-foreground-color: rgb(105, 105, 105);
@@ -45,6 +46,7 @@ html {
   --github-icon-foreground-color: rgba(23, 21, 21, 0.9);
   --github-icon-background-color: rgba(255, 255, 255, 0.9);
   --sidebar-nav-hover-color: rgba(0, 0, 0, 0.3);
+  --left-nav-border-color: rgb(100, 100, 100);
   
   --resume-font-weight: 700; 
   --job-title-font-weight: 300;
