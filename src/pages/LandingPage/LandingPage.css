@@ -1,0 +1,212 @@
+.page__container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-page-background);
+}
+
+.page-default-margin {
+  margin: 80px 20px;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.page-landing {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.landingpage-left__container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  z-index: 10;
+}
+
+
+
+.landingpage-right__container {
+  width: 30%;
+  display: flex;
+  margin-left: -200px;
+  align-items: center;
+  z-index: 9;
+}
+
+.landingpage-right__container img {
+  object-fit: contain;
+}
+
+.landingpage-left__container h4 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: var(--text-color-2);
+
+}
+.landingpage-left__container h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.landingpage-left__container h1 span {
+  color: var(--primary-cyan);
+  display: inline-block;
+
+}
+
+.landingpage-left__container h3 {
+  font-weight: var(--job-title-font-weight);
+  font-size: 1.5rem;
+  color: var(--text-color-2);
+}
+
+.links__container {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-logo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid var(--social-icon-border-color);
+  cursor: pointer;
+}
+
+.social-logo__container:hover {
+  border: 1px solid rgba(29, 29, 29, 0);
+}
+
+.social-logo__container .logo {
+  fill: var(--social-icon-foreground-color);
+}
+
+.social-logo__container .logo-box {
+  fill: var(--social-icon-background-color);
+}
+
+.social-logo__container:hover .facebook-logo {
+  fill: rgb(255, 255, 255, .9);
+}
+
+.social-logo__container:hover .facebook-logo-box {
+  fill: rgb(24, 118, 242, .9);
+}
+
+.social-logo__container:hover .linkedin-logo {
+  fill: rgb(255, 255, 255, .9);
+}
+
+.social-logo__container:hover .linkedin-logo-box {
+  fill: rgba(0, 119, 181, .9)
+}
+
+.social-logo__container:hover .github-logo {
+  fill: var(--github-icon-foreground-color);
+}
+
+.social-logo__container:hover .github-logo-box {
+  fill: var(--github-icon-background-color);
+}
+
+.logo-icon {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.04); /* Slight zoom */
+}
+
+.cv__container {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid var(--resume-border-color);
+  cursor: pointer;
+}
+
+.cv__container:hover {
+  border: 1px solid var(--primary-page-background);
+  background-color: var(--primary-cyan);
+}
+
+.cv__container:hover .new-tab-icon {
+  fill:  rgb(236, 236, 236);
+}
+
+.cv__container:hover span {
+  color:  rgb(236, 236, 236);
+}
+
+.new-tab-logo__container {
+  width: 18px;
+  height: 18px;
+}
+
+.new-tab-icon {
+  fill: var(--social-icon-foreground-color);
+}
+
+.cv__container span {
+  font-family: "montserrat";
+  font-size: .7rem;
+  font-weight: var(--resume-font-weight);
+  color: var(--social-icon-foreground-color);
+}
+
+@media (max-width: 1440px) {
+  .landingpage-left__container {
+    width: 65%;
+  }
+  
+  .landingpage-right__container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1024px) {
+  
+  .landingpage-right__container {
+    width: 45%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .page-landing {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 10px 0px 10px;
+  }
+  .landingpage-left__container {
+    width: auto;
+  }
+
+  .landingpage-left__container h1 {
+    font-size: 3.5rem;
+  }
+
+  .landingpage-left__container h3 {
+    font-size: 1.2rem;
+  }
+  
+  .landingpage-right__container {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 ;
+  }
+}

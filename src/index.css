@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  color-scheme: dark light;
+}
+
+:root {
+  color-scheme: light;
+  --text-color: rgb(58, 58, 58);
+  --text-color-2: rgb(58, 58, 58);
+  --primary-page-background:  rgb(240, 240, 240);
+  --secondary-page-background:  rgb(226, 226, 226);
+  --primary-cyan: rgb(17, 161, 154);
+  --primary-red: rgb(255, 14, 86);
+  --dark-green: rgb(77, 110, 110);
+  --shadow-color: rgb(170, 170, 170);
+  --error-red: rgb(202, 54, 73);
+
+  --social-icon-foreground-color: rgb(78, 78, 78);
+  --social-icon-background-color: var(--primary-page-background);
+  --social-icon-border-color: rgb(92, 92, 92);
+  --resume-border-color: rgb(17, 161, 154);
+  --github-icon-foreground-color: rgb(255, 255, 255, .9);
+  --github-icon-background-color: rgb(23, 21, 21, .9);
+  --sidebar-nav-hover-color: rgba(255, 255, 255, 0.3);
+  
+  --resume-font-weight: 600; 
+  --job-title-font-weight: 400;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --text-color: rgb(238, 238, 238);
+  --text-color-2: rgb(138, 138, 138);
+  --primary-page-background:  rgb(32, 32, 32);
+  --secondary-page-background:  rgb(26, 26, 26);
+  --shadow-color: rgb(53, 53, 53);
+  --error-red: rgb(202, 54, 73);
+
+  --social-icon-foreground-color: rgb(105, 105, 105);
+  --social-icon-background-color: var(--secondary-page-background);
+  --social-icon-border-color: rgba(255,255,255,.2);
+  --resume-border-color: rgba(17, 161, 154, 0.4);
+  --github-icon-foreground-color: rgba(23, 21, 21, 0.9);
+  --github-icon-background-color: rgba(255, 255, 255, 0.9);
+  --sidebar-nav-hover-color: rgba(0, 0, 0, 0.3);
+  
+  --resume-font-weight: 700; 
+  --job-title-font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Montserrat", sans-serif;
+  transition: all 0.3s ease-in-out;
+  color: var(--text-color);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-style-link {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}
