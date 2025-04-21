@@ -12,7 +12,7 @@ Add deploy scripts under `scripts`
 
     "scripts": {
           "predeploy": "npm run build",
-          "deploy": "gh-pages -d build"
+          "deploy": "gh-pages -d dist"
         }
 Run the following command to deploy
     
