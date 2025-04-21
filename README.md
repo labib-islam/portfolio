@@ -8,6 +8,11 @@ Install gh-pages
 Add homepage to **package.json**
 
     "homepage": "https://labib-islam.github.io/repo_name/"
+Add the following code to **vite.config.js**
+
+    export default defineConfig({
+      base: "/repo_name",
+    });
 Add deploy scripts under `scripts`
 
     "scripts": {
