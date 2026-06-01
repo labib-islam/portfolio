@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import ImageSlider from "./ImageSlider";
 import GithubLogo from "../../assets/socials/github-logo.svg?react";
-import LinkIcon from "../../assets/icons/link-icon.svg?react";
+import NewTabIcon from "../../assets/icons/new-tab-icon.svg?react";
 
 import "./Projects.css";
 import { Link } from "react-router";
@@ -43,22 +43,25 @@ const Projects = () => {
                       />
                     </div>
                     <div className="card-bottom">
-                      <div>
-                        <h2>{item.Name}</h2>
-                        <Link to={item.Github} target="_blank">
-                          <div className="card-link__container">
-                            <GithubLogo className="logo-item" />
-                          </div>
-                        </Link>
-                        {item.Link && (
-                          <Link to={item.Link} target="_blank">
+                      <div className="card-header">
+                        <h2 title={item.Name}>{item.Name}</h2>
+                        <div className="card-actions">
+                          <Link to={item.Github} target="_blank">
                             <div className="card-link__container">
-                              <LinkIcon className="icon-item" />
+                              <GithubLogo className="logo-item" />
                             </div>
                           </Link>
-                        )}
+                          {item.Link && (
+                            <Link to={item.Link} target="_blank">
+                              <div className="website-link__container">
+                                <NewTabIcon className="icon-item" />
+                                <span className="website-label">Website</span>
+                              </div>
+                            </Link>
+                          )}
+                        </div>
                       </div>
-                      <p>{item.Description}</p>
+                      <p title={item.Description}>{item.Description}</p>
                       <span>{item.Stack}</span>
                     </div>
                   </div>

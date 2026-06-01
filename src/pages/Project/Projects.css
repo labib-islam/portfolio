@@ -8,7 +8,7 @@
 .card__container {
   background-color: var(--primary-page-background);
   width: 350px;
-  min-height: 560px;
+  height: 560px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -37,6 +37,11 @@
 
 .card-bottom div h2 {
   flex-grow: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.05rem;
 }
 
 .card-link__container {
@@ -91,8 +96,66 @@
   background-color: #3a3a3a;
 }
 
+/* Website link with icon + label */
+.website-link__container {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid var(--text-color-2);
+  cursor: pointer;
+}
+
+.website-link__container .icon-item {
+  width: 18px;
+  height: 18px;
+  transform: none;
+}
+
+.card-actions .website-label {
+  font-size: 0.8rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.website-link__container:hover {
+  background-color: #3a3a3a;
+}
+
+.website-link__container:hover .icon-item path {
+  fill: rgb(255, 94, 94);
+}
+
+/* Header layout: title left, actions right */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Remove default underline and preserve text color for action links */
+.card-actions a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card-bottom p {
   margin-bottom: auto;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card-bottom span {
